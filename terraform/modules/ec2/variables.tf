@@ -16,7 +16,7 @@ variable "subnet_id" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.medium"
+  default     = "c7i-flex.large"
 }
 
 variable "volume_size" {

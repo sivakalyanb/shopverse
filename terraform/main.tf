@@ -52,3 +52,4 @@ module "jump_server" {
   aws_region        = var.aws_region
   tags              = local.common_tags
 }
+

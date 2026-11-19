@@ -4,7 +4,7 @@
 variable "aws_region" {
   description = "AWS region for all resources"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "project_name" {
@@ -34,13 +34,13 @@ variable "cluster_name" {
 variable "cluster_version" {
   description = "Kubernetes version for EKS"
   type        = string
-  default     = "1.31"
+  default     = "1.36"
 }
 
 variable "node_instance_type" {
   description = "EC2 instance type for EKS worker nodes"
   type        = string
-  default     = "t3.medium"
+  default     = "c7i-flex.large"
 }
 
 variable "node_desired_size" {
@@ -73,7 +73,7 @@ variable "create_jump_server" {
 variable "jump_server_instance_type" {
   description = "EC2 instance type for the jump server"
   type        = string
-  default     = "t2.medium"
+  default     = "c7i-flex.large"
 }
 
 variable "jump_server_allowed_ssh_cidrs" {
